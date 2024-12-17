@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
       - name: Install build-wrapper
-        uses: sonarsource/sonarqube-scan-action/install-build-wrapper@antonio/SQCPPGHA-9-rebranding-and-forward
+        uses: sonarsource/sonarqube-scan-action/install-build-wrapper@v4.2.1
       - name: Run build-wrapper
         run: |
           New-Item -ItemType directory -Path build
