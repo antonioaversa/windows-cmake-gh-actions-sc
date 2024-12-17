@@ -23,7 +23,7 @@ jobs:
           cmake -S . -B build
           build-wrapper-win-x86-64.exe --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} cmake --build build/ --config Release
       - name: Install and run sonar-scanner
-        uses: sonarsource/sonarqube-scan-action@antonio/SQCPPGHA-9-rebranding-and-forward
+        uses: sonarsource/sonarqube-scan-action@v4.2.1
         env:
           SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }} # Put the name of your token here
         with:
